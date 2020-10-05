@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.fa-cogs {
+  font-size: 200px;
+  color: #999999;
+  cursor: pointer;
+}
+.fa-cogs:hover {
+  color: #505050;
+}
+.logoContainer {
+  display: block;
+  margin-bottom: 10rem;
+}
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0.2rem 0.2rem 0.4rem #50505030, -0.2rem -0.2rem 0.4rem #50505030;
+  border: 1px solid #b1b1b1;
+  border-radius: 0.5rem;
+  background-color: #e3e3e3;
+  margin-bottom: 10rem;
+}
+.loginBackground {
+  display: none;
+}
+.loginContainer div {
+  margin: 0.5rem;
+}
+#loginTextIcon {
+  position: relative;
+  left: 1.5rem;
+  color: #999999;
+  font-size: 1rem;
+}
+.loginContainer div p {
+  font-size: 2rem;
+  color: #505050;
+  text-shadow: 1px 1px #ffffff;
+  margin: 0rem 0.5rem 0rem 0.5rem !important;
+  font-family: "Mitr", sans-serif;
+}
+.facebookIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #3b5998;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.facebookIconContainer:hover {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.facebookIconContainer:hover > i {
+  color: #3b5998;
+  transition: 0.3s;
+}
+.googleIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #dd4b39;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.googleIconContainer:hover {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.googleIconContainer:hover > i {
+  color: #dd4b39;
+  transition: 0.3s;
+}
+.twitterIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #1da1f2;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.twitterIconContainer:hover {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+.twitterIconContainer:hover > i {
+  color: #1da1f2;
+  transition: 0.3s;
+}
+.loginIconContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2rem !important;
+}
+.loginIconContainer div i {
+  color: #e3e3e3;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.loginTextbox,
+.passwordTextbox {
+  padding-left: 2rem;
+  width: 15rem;
+  height: 2.5rem;
+  border: 1px solid #999999;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  outline: none;
+  font-family: "Mitr", sans-serif;
+}
+.loginTextbox:focus::-webkit-input-placeholder,
+.passwordTextbox:focus::-webkit-input-placeholder {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+.loginTextbox:focus:-moz-placeholder,
+.passwordTextbox:focus:-moz-placeholder {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+.loginTextbox:focus::-moz-placeholder,
+.passwordTextbox:focus::-moz-placeholder {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+.loginTextbox:focus::-moz-placeholder,
+.passwordTextbox:focus::-moz-placeholder {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+.loginTextbox::placeholder,
+.passwordTextbox::placeholder {
+  color: #b1b1b1;
+  opacity: 1;
+}
+.loginTextbox:-ms-input-placeholder,
+.passwordTextbox:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.loginTextbox::-ms-input-placeholder,
+.passwordTextbox::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+.loginButton {
+  width: 15rem;
+  height: 2.5rem;
+  border: 1px solid #505050;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Mitr", sans-serif;
+  color: #505050;
+  background-color: #e3e3e3;
+}
+.loginButton:hover {
+  color: #ff7e14;
+  border: 1px solid #ff7e14;
+}
+.forgotPassword {
+  text-align: right;
+  width: 17rem;
+  position: relative;
+  margin: -0.3rem 0rem 0.5rem 0rem !important ;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.forgotPassword:hover {
+  color: #202020;
+}
+.closeIconContainer {
+  width: 95%;
+  text-align: right;
+  opacity: 0.2;
+}
+#closeIcon {
+  margin: -0.3rem 0rem 0.5rem 0rem !important ;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #909090;
+}
+#closeIcon:hover {
+  color: #ff0000;
+}
+.loginContainer:hover > .closeIconContainer {
+  opacity: 1;
+}
+.signupContainer {
+  font-size: 1rem;
+  color: #505050;
+  text-shadow: 1px 1px #e3e3e3;
+  margin: 3rem 0.5rem 0rem 0.5rem !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #505050;
+}

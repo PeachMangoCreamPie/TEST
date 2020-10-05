@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Mitr', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Connect</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="logoContainer">
+        <i class="fa fa-cogs" onclick="showLogin()"></i>
+      </div>
+      <!-- login -->
+      <div class="loginBackground">
+        <div class="loginContainer">
+          <div class="closeIconContainer">
+            <i class="fa fa-close" id="closeIcon" onclick="hideLogin()"></i>
+          </div>
+          <div><p>Sign in</p></div>
+          <div>
+            <i class="fa fa-user" id="loginTextIcon"></i>
+            <input
+              type="text"
+              class="loginTextbox"
+              placeholder="ID / Username"
+            />
+          </div>
+          <div>
+            <i class="fa fa-lock" id="loginTextIcon"></i>
+            <input
+              type="password"
+              class="passwordTextbox"
+              placeholder="Password"
+            />
+          </div>
+          <div class="forgotPassword">Forgot Password ?</div>
+          <div>
+            <input
+              type="button"
+              class="loginButton"
+              value="Login"
+              onclick="window.location.href='home.html'"
+            />
+          </div>
+          <div class="signupContainer">Or Sign Up Using</div>
+          <div class="loginIconContainer">
+            <div class="facebookIconContainer">
+              <i class="fa fa-facebook"></i>
+            </div>
+            <div class="googleIconContainer">
+              <i class="fa fa-google-plus"></i>
+            </div>
+            <div class="twitterIconContainer">
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer></footer>
+    </div>
+    <script src="js/index.js" type="text/javascript"></script>
+  </body>
+</html>
